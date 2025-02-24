@@ -12,6 +12,7 @@ if [ -z "${TOKEN}" ]; then
 fi
 
 export RUNNER_ALLOW_RUNASROOT=1 
+export DEBIAN_FRONTEND=noninteractive
 
 cd /runner 
 ./config.sh \
