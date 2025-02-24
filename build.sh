@@ -2,13 +2,14 @@
 
 set -e
 
+if [ -z "${TOKEN}" ]; then
+  echo "TOKEN is not set"
+  exit 1
+fi
+
 LABEL=${LABEL:-"ubuntu-jammy"}
 TEST=${TEST:-"false"}
  
-. .env
-
-echo $TOKEN
-
 URL=https://github.com/jeanparpaillon/FreeCAD
 NAME=runner-${LABEL}-${RANDOM}
 WORKFLOW="Local Ubuntu Build"
