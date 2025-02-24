@@ -10,7 +10,7 @@ fi
 LABEL=${LABEL:-"ubuntu-jammy"}
 TEST=${TEST:-"false"}
  
-URL=https://github.com/jeanparpaillon/FreeCAD
+URL=https://github.com/jeanparpaillon/FreeCAD-builder
 NAME=runner-${LABEL}-${RANDOM}
 WORKFLOW="Local Ubuntu Build"
 REF=${REF:-"main"}
